@@ -1,0 +1,58 @@
+body {
+  overflow-x: hidden;
+}
+
+.rightBloc h1 {
+  color: #FFC466;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.theSong {
+  display: flex;
+  width: 100%;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  margin-bottom: 50px;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.theSong div {
+  width: 33%;
+}
+
+.theSong .artist-title {
+  display: flex;
+  align-items: center;
+}
+
+.theSong .artist-title h2 {
+  margin-right: 10px;
+}
+
+.theSong .artist-title h3 {
+  color: #8C8F91;
+}
+
+.theSong .cover img {
+  display: block;
+  width: 40%;
+  float: right;
+}
+
+.topAlbum {
+  transition-duration: 1s;
+  opacity: 1;
+}
+
+.topAlbum.active {
+  transform: translateY(20%);
+  transition-duration: 1s;
+  opacity: 0;
+  cursor: none;
+}
+

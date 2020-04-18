@@ -1,0 +1,68 @@
+//Définition de mes variables
+$red: #FF3838;
+$orange: #FFBD38;
+$grey:#CBCBCB;
+$ligth-grey:#F2F2F2;
+
+$main:#FFC466;
+$background:#f9f9f9;
+$font:#171C20;
+
+body {
+	overflow-x: hidden;
+}
+.rightBloc h1{
+	color: $main;
+	font-size: 45px;
+	font-weight: bold;
+}
+
+.theSong{
+	display: flex;
+	width: 100%;
+	background-color:white;
+	margin-left: auto;
+	margin-right: auto;
+	align-items: center;
+	margin-bottom: 50px;
+	padding: 20px;
+	border-radius: 5px;
+	cursor: pointer;
+
+	div{
+		width: 33%;
+	}
+
+	.artist-title{
+		display: flex;
+		align-items:center;
+		
+		h2{
+			margin-right: 10px;
+		}
+
+		h3{
+			
+			color:#8C8F91;
+		}
+	}
+
+
+	.cover img{
+		display: block;
+		width: 40%;
+		float: right;
+	}
+}
+
+.topAlbum{
+	transition-duration: 1s;
+	opacity: 1;
+}
+
+.topAlbum.active{
+	transform: translateY(20%);
+	transition-duration: 1s;
+	opacity: 0;
+	cursor: none;
+}

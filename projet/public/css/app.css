@@ -1,0 +1,238 @@
+body {
+  font-family: "Questrial";
+  color: #171C20;
+  background-color: #f9f9f9;
+  max-width: 100%;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body section {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  position: relative;
+  /*justify-content: space-around;*/
+}
+
+body hr {
+  color: #F2F2F2;
+}
+
+.leftBloc {
+  height: 100vh;
+  width: 15%;
+  padding-left: 50px;
+  padding-top: 50px;
+  background-color: #FFC466;
+  margin-left: -8px;
+  margin-top: -8px;
+  position: fixed;
+}
+
+.leftBloc h2 {
+  color: #f9f9f9;
+}
+
+.leftBloc p {
+  padding: 10px;
+  color: #f9f9f9;
+}
+
+.leftBloc p.selected {
+  background-color: #f9f9f9;
+  color: #FFC466;
+  box-shadow: 10px 0px 38px -20px #ffbd38;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.leftBloc p:hover {
+  background-color: #FFBB22;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  border-radius: 20px 0px 0px 20px;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.rightBloc {
+  width: 70%;
+  margin-right: 7%;
+  margin-left: auto;
+}
+
+.rightBloc .randomBloc {
+  cursor: pointer;
+  padding: 20px;
+}
+
+.rightBloc .content {
+  padding: 50px;
+}
+
+.rightBloc .randomBloc,
+.rightBloc .content {
+  border-radius: 5px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.rightBloc .randomBloc p,
+.rightBloc .content p {
+  font-size: 25px;
+}
+
+.rightBloc .randomBloc .artist,
+.rightBloc .content .artist {
+  /*justify-content: space-around;*/
+  display: flex;
+  align-items: center;
+}
+
+.rightBloc .randomBloc .artist div:nth-child(2),
+.rightBloc .content .artist div:nth-child(2) {
+  text-align: center;
+  line-height: 0;
+}
+
+.rightBloc .randomBloc .artist .flex,
+.rightBloc .content .artist .flex {
+  width: 50%;
+}
+
+.rightBloc .randomBloc .artist .flex h2,
+.rightBloc .content .artist .flex h2 {
+  color: #FFC466;
+  font-size: 40px;
+}
+
+.rightBloc .randomBloc .artist .flex h3,
+.rightBloc .content .artist .flex h3 {
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+
+.rightBloc .randomBloc .artist .leftFlex img,
+.rightBloc .content .artist .leftFlex img {
+  margin-top: -8px;
+  display: block;
+  width: 70%;
+}
+
+.rightBloc input {
+  border: 0;
+  font-family: "Questrial";
+  color: #CBCBCB;
+  font-size: 20px;
+}
+
+.rightBloc h1 {
+  color: #FFC466;
+  text-align: center;
+}
+
+.searchBar img {
+  width: 2%;
+  cursor: pointer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.3fr 0.2fr 1.5fr 0.6fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  grid-template-areas: "playButton trackNumber trackTitle trackTime";
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.grid-container .playButton {
+  grid-area: playButton;
+  display: flex;
+}
+
+.grid-container .trackNumber {
+  grid-area: trackNumber;
+}
+
+.grid-container .trackTitle {
+  grid-area: trackTitle;
+  display: flex;
+}
+
+.grid-container .trackTime {
+  grid-area: trackTime;
+  text-align: right;
+}
+
+.fans_flex {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+}
+
+.fans_flex h3 {
+  margin-right: 5px;
+}
+
+.hideId {
+  display: none;
+}
+
+audio::-webkit-media-controls-panel {
+  width: 100px;
+  background-color: #FFC466;
+}
+
+.content {
+  justify-content: center;
+  text-align: center;
+}
+
+.content h2 {
+  text-align: center;
+}
+
+.content input {
+  background-color: #f9f9f9;
+  padding: 10px;
+  font-size: 15px;
+  margin-right: 20px;
+}
+
+.content button {
+  color: white;
+  background-color: #FFC466;
+  border: 0;
+  padding: 10px;
+}
+
+.favsong {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.favsong div {
+  width: 25%;
+  text-align: left;
+}
+
+.favsong p {
+  margin-right: 50px;
+}
+
+audio {
+  width: 100px;
+  height: 30px;
+}
+

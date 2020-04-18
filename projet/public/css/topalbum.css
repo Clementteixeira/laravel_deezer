@@ -1,0 +1,19 @@
+.selectedAlbum {
+  position: absolute;
+  width: 72%;
+  border-radius: 5px;
+  transform: translateX(150%);
+  transition-duration: 1s;
+  z-index: 100;
+}
+
+.selectedAlbum img {
+  width: 50%;
+  display: block;
+}
+
+.selectedAlbum.active {
+  transform: translateX(0);
+  transition-duration: 1s;
+}
+
